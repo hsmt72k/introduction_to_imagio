@@ -29,6 +29,7 @@
 2. 🔗 [URL](#url)
 3. 🔋 [アプリの機能](#feature)
 4. 🚀 [アプリの利用サンプル](#example)
+1. 🤸 [終わりに](#outro)
 
 ## <a name="intro">🤖 はじめに</a>
 
@@ -101,8 +102,27 @@ AI 変換された画像をローカルに保存可能
 
 ## <a name="example">🚀 アプリの利用サンプル</a>
 
-- [ログイン](#logged-in)
-- [メディアアップローダ](#uploader)
+1. [ログイン](#logged-in)
+2. [メディアアップローダ](#uploader)
+3. [画像変換機能（１）：画像をきれいに](#restore)
+   1. [画像変換機能（１）：画像をきれいに](#restore)
+   2. [画像変換機能（２）：画像のサイズ比率変更](#fill)
+   3. [画像変換機能（３）：邪魔なものを削除](#remove)
+   4. [画像変換機能（４）：指定箇所の色変換](#recolor)
+   5. [画像変換機能（５）：背景の除去](#remove-background)
+4. [ファイルダウンロード](#download)
+5. [詳細ページ](#detail)
+6. [画像の更新](#update)
+7. [画像の削除](#delete)
+8. [ポイント不足](#insufficient)
+9. [ポイントの購入（Stripe を使った決済）](#stripe)
+10. [ページネーション（次へ／前へ）](#pagination)
+11. [ページ遷移（サイドバーから）](#transition-sidebar)
+12. [ページ遷移（ヘッダから）](#transition-header)
+13. [検索機能（デバウンス検索）](#search)
+14. [表示デバイスに柔軟に対応するレイアウト設計](#responsive)
+15. [ログインしていないユーザ](#not-logged-in)
+16. [ログアウト](#logged-out)
 
 ### <a name="logged-in">ログイン</a>
 
@@ -112,83 +132,85 @@ AI 変換された画像をローカルに保存可能
 
 <img src="./images/imagio_media_uploader_01.gif" />
 
-## 画像変換機能（１）：画像をきれいに
+## <a name="restore">画像変換機能（１）：画像をきれいに</a>
 
 画像の精細化。ぼやけた画像をくっきりきれいに修復
 
 <img src="./images/imagio_restore_01.gif" />
 
-## 画像変換機能（２）：画像のサイズ比率変更
+## <a name="fill">画像変換機能（２）：画像のサイズ比率変更</a>
 
 AI の予測画像生成を使って画像の寸法を拡張
 
 <img src="./images/imagio_fill_01.gif" />
 
-## 画像変換機能（３）：邪魔なものを削除
+## <a name="remove">画像変換機能（３）：邪魔なものを削除</a>
 
 画像から指定したオブジェクトを識別し、抽出した物体を除去
 
 <img src="./images/imagio_remove_01.gif" />
 
-## 画像変換機能（４）：指定箇所の色変換
+## <a name="recolor">画像変換機能（４）：指定箇所の色変換</a>
 
 指定したオブジェクトを希望する色に塗り替え
 
 <img src="./images/imagio_recolor_01.gif" />
 
-## 背景の除去
+## <a name="remove-background">画像変換機能（５）：背景の除去</a>
 
 <img src="./images/imagio_remove_background_01.gif" />
 
-## ファイルダウンロード
+## <a name="download">ファイルダウンロード</a>
 
 <img src="./images/imagio_download_01.gif" />
 
-## 詳細ページ
+## <a name="detail">詳細ページ</a>
 
 ログインユーザは、他のユーザが保存した画像を見られるが、更新や削除はできない。
 
 <img src="./images/imagio_detail_page_01.gif" />
 
-## 画像の更新
+## <a name="update">画像の更新</a>
 
 <img src="./images/imagio_update_01.gif" />
 
-## 画像を削除
+## <a name="delete">画像の削除</a>
 
 <img src="./images/imagio_delete_01.gif" />
 
-## ポイント不足
+## <a name="insufficient">ポイント不足</a>
 
 <img src="./images/imagio_insufficient_points_01.gif" />
 
-## ポイントの購入（Stripe を使った決済）
+## <a name="stripe">ポイントの購入（Stripe を使った決済）</a>
 
 <img src="./images/imagio_stripe_01.gif" />
 
-## ページネーション（次へ／前へ）
+## <a name="pagination">ページネーション（次へ／前へ）</a>
 
 <img src="./images/imagio_pagination_01.gif" />
 
-## ページ遷移（サイドバーから）
+## <a name="transition-sidebar">ページ遷移（サイドバーから）</a>
 
 <img src="./images/imagio_page_transition_from_sidebar_01.gif" />
 
-## ページ遷移（ヘッダから）
+## <a name="transition-header">ページ遷移（ヘッダから）</a>
 
 <img src="./images/imagio_page_transition_from_header_01.gif" />
 
-## 検索機能（デバウンス検索）
+## <a name="search">検索機能（デバウンス検索）</a>
 
 検索フォームにキーワードを入力するとリアルタイムに、画像の検索結果が表示される。「検索」ボタンなどをクリックする必要がない。
 
+デバウンスとは、わずかな一定間隔の間を置いて処理を実行する動きのこと。
+
 <img src="./images/imagio_searching_01.gif" />
 
-## モバイルと PC どちらにも柔軟に対応するレイアウト設計（レスポンシブレイアウト）
+## <a name="responsive">表示デバイスに柔軟に対応するレイアウト設計</a>
 
 <img src="./images/imagio_responsive_01.gif" />
 
-## ログインしていないユーザ
+## <a name="not-logged-in">ログインしていないユーザ</a>
 
 ユーザがログインしていない場合、他のユーザが作成した画像一覧は見られるが、画像詳細は見られず、画像変換機能も使えない。
 
@@ -196,6 +218,10 @@ AI の予測画像生成を使って画像の寸法を拡張
 
 <img src="./images/imagio_not_yet_logged_in_01.gif" />
 
-## ログアウト
+## <a name="logged-out">ログアウト</a>
 
 <img src="./images/imagio_logout_01.gif" />
+
+## <a name="outro">🤸 おわりに</a>
+
+より生活を便利に、スマートに、生活を支えるアプリを作っていきますので、よろしくお願いします！
